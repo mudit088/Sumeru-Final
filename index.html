@@ -27,9 +27,14 @@
     <header class="header bg-gray-800 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
           <a href="#" class="logo"><img src="./images/logo1.png" alt=""></a>
-          <button class="block lg:hidden" id="menu-toggle">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <button class="block lg:hidden" id="menu-toggle" aria-label="Toggle navigation menu" title="Toggle navigation menu">
+            <!-- Menu Icon (hamburger) -->
+            <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+            <!-- Close Icon (cross) -->
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
           <nav class="navbar hidden lg:flex">
@@ -48,7 +53,7 @@
       
         <!-- Mobile Menu -->
         <nav id="mobile-menu" class="navbar lg:hidden hidden bg-gray-800">
-          <ul class="flex flex-col space-y-2 p-4">
+          <ul class="flex flex-col space-y-2 p-4 pt-36">
             <li><a href="#home" class="hover:text-gray-400">home</a></li>
             <li><a href="About.html" class="hover:text-gray-400">about</a></li>
             <li><a href="Services.html" class="hover:text-gray-400">services</a></li>
@@ -60,6 +65,11 @@
           </ul>
         </nav>
       </header>
+      
+      
+      <!-- Script placed just before the closing body tag -->
+     
+      
       
     
      
@@ -81,7 +91,7 @@
 
   </div>
 
-  <div class="Offices">
+  <div class="Offices flex flex-col sm:flex-row">
     <div class="image-section">
         <img src="./images/offices3.jpeg" alt="Woman with Document">
     </div>

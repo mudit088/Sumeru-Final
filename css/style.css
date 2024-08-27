@@ -181,7 +181,7 @@ body{
 
 
 /* Media queries for responsive design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .header .navbar ul {
         flex-direction: column;
         gap: 10px;
@@ -204,7 +204,7 @@ body{
         width: 100%;
         background-color: rgba(0, 0, 0, 0.8);
     }
-}
+} */
 
 
 
@@ -234,12 +234,7 @@ body{
     padding: 0.5rem;
 }
 
-.header .fa-bars{
-    color: #fff;
-    cursor: pointer;
-    font-size: 3rem;
-    display: none;
-}
+
 
 .home{
     min-height: 100vh;
