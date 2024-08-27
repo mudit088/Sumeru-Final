@@ -1,4 +1,7 @@
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -21,10 +24,9 @@ body{
 
 .heading, .clients .section-header h2, .section-head h1, .testimonials .section-header h2, .section-head-1 h4{
     margin: 2rem;
-    padding-top: 2rem;
+    padding-top: 5rem;
     display: inline-block;
     font-size: 3.5rem;
-    color: #f4f4f5;
     position: relative;
     letter-spacing: .2rem;
     
@@ -559,7 +561,7 @@ body{
 
   }
   .section-head-1 p{
-    color:#333;
+   
     font-size: 20px;
     line-height: 28px;
     text-align: center;

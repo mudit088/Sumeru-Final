@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumeru</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="./src/output.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="icon" href="./images/image.png">
@@ -18,27 +19,56 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
     <script src="./js/main.js"></script>
+    <script>
+      
+      </script>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo"><img src="./images/logo1.png" alt=""></a>
-        <div class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="About.html">about</a></li>
-                <li><a href="Services.html">services</a></li>
-
-                <li><a href="#Staffing">Staffing</a></li>
-                <li><a href="#Startup ">Startup Services</a></li>
-                <li><a href="careers.html">career</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li><a href="#faq">FAQ</a></li>
+    <header class="header bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <a href="#" class="logo"><img src="./images/logo1.png" alt=""></a>
+          <button class="block lg:hidden" id="menu-toggle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+          <nav class="navbar hidden lg:flex">
+            <ul class="flex space-x-4">
+              <li><a href="#home" class="hover:text-gray-400">home</a></li>
+              <li><a href="About.html" class="hover:text-gray-400">about</a></li>
+              <li><a href="Services.html" class="hover:text-gray-400">services</a></li>
+              <li><a href="#Staffing" class="hover:text-gray-400">Staffing</a></li>
+              <li><a href="#Startup" class="hover:text-gray-400">Startup Services</a></li>
+              <li><a href="careers.html" class="hover:text-gray-400">career</a></li>
+              <li><a href="#contact" class="hover:text-gray-400">contact</a></li>
+              <li><a href="#faq" class="hover:text-gray-400">FAQ</a></li>
             </ul>
+          </nav>
+        </div>
+      
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="navbar lg:hidden hidden bg-gray-800">
+          <ul class="flex flex-col space-y-2 p-4">
+            <li><a href="#home" class="hover:text-gray-400">home</a></li>
+            <li><a href="About.html" class="hover:text-gray-400">about</a></li>
+            <li><a href="Services.html" class="hover:text-gray-400">services</a></li>
+            <li><a href="#Staffing" class="hover:text-gray-400">Staffing</a></li>
+            <li><a href="#Startup" class="hover:text-gray-400">Startup Services</a></li>
+            <li><a href="careers.html" class="hover:text-gray-400">career</a></li>
+            <li><a href="#contact" class="hover:text-gray-400">contact</a></li>
+            <li><a href="#faq" class="hover:text-gray-400">FAQ</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
+      
+    
+     
+      
+     
+      
 
   <section id="home" class="home">
+    
       <h1>Welcome to Sumeru Global</h1>
       <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, aspernatur?</h2>
     <div class="wave wave1"></div>
