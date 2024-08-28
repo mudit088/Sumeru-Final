@@ -19,11 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const images = [
-
   "./images/img3.jpg",
   "./images/img2.jpg",
   "./images/img1.jpg",
-  
 ];
 let currentIndex = 0;
 
@@ -41,8 +39,12 @@ function previousImage() {
   updateBackground();
 }
 
-
+// Automatically switch images every 4 seconds
 setInterval(nextImage, 4000);
+
+// Initialize with the first image
+updateBackground();
+
 
 
 
