@@ -106,7 +106,7 @@ const images = [
   "../images/img3.jpg",
   "../images/img1.jpg",
   "../images/img2.jpg",
-  "../images/Landing3.jpeg"
+  
 ];
 let currentIndex = 0;
 
@@ -125,7 +125,7 @@ function previousImage() {
 }
 
 // Automatically change background every 5 seconds
-setInterval(nextImage, 5000);
+setInterval(nextImage, 4000);
 
 
 
