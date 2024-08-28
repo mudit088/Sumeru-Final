@@ -101,3 +101,27 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+
+const images = [
+  "../images/img3.jpg",
+  "../images/img1.jpg",
+  "../images/img2.jpg",
+  "../images/Landing3.jpeg"
+];
+let currentIndex = 0;
+
+function updateBackground() {
+  document.querySelector('.home').style.backgroundImage = `url(${images[currentIndex]})`;
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateBackground();
+}
+
+function previousImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateBackground();
+}
+
+

@@ -102,6 +102,71 @@ body{
 }
 
 .header {
+    background-color: #e7d8d8;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.header a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header a:hover {
+    color: #e60000;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.header .logo img {
+    max-height: 40px;
+}
+
+#menu-toggle {
+    cursor: pointer;
+}
+
+#menu-icon, #close-icon {
+    display: block;
+}
+
+#menu-icon.hidden, #close-icon.hidden {
+    display: none;
+}
+
+/* Mobile Menu */
+#mobile-menu {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100%; /* Adjusted to appear below the sticky header */
+    right: 0;
+    width: 100%;
+}
+
+#mobile-menu a {
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+
+/* .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,7 +179,7 @@ body{
     background-color: rgba(255, 255, 255, 0.8); /* Add background color for visibility */
     backdrop-filter: blur(10px); /* Optional: add a blur effect */
     transition: background-color 0.3s ease, padding 0.3s ease; /* Smooth transition for changes */
-}
+} */
 
 /* Adjust for tablet screens (min-width: 768px) */
 @media (min-width: 768px) {
@@ -172,11 +237,11 @@ body{
 
 
 
-.header {
+/* .header {
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(175, 97, 29, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Change color on scroll */
 
@@ -209,7 +274,7 @@ body{
 
 
 
-.header .navbar ul{
+/* .header .navbar ul{
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -233,11 +298,11 @@ body{
 
 .header .logo i{
     padding: 0.5rem;
-}
+} */
 
 
 
-.home{
+.home {
     min-height: 100vh;
     width: 100vw;
     background-image: url(../images/img3.jpg);
@@ -250,12 +315,32 @@ body{
     padding: 0 1rem;
     position: relative;
     overflow: hidden !important;
-}
+    transition: background-image 0.5s ease-in-out;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .left-arrow {
+    left: 20px;
+  }
+  
+  .right-arrow {
+    right: 20px;
+  }
+  
 
 .home h1{
     color: #fff;
     font-size: 5.5rem;
-    padding-bottom: 5px;
+    padding-top: 25rem;
 }
 
 .home h2{

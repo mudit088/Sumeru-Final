@@ -12,56 +12,44 @@
    
 </head>
 <body>
-    <header class="header bg-gray-800 text-white p-4">
-        <div class="">
-            <a href="#">
-                <img class="w-20 sm:w-24 md:w-32 lg:w-40 xl:w-48" src="./images/logo1.png" alt="">
-            </a>
-            
-            </div>           
-            
-          <button class="block lg:hidden" id="menu-toggle" aria-label="Toggle navigation menu" title="Toggle navigation menu">
-            
-            <!-- Menu Icon (hamburger) -->
-            <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-            
-            <!-- Close Icon (cross) -->
-            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-            
-          </button>
-          
-          <nav class="hidden sm:flex">
-            <ul class="flex space-x-4">
-              <li><a href="Index.html" class="hover:text-gray-400">home</a></li>
-              <li><a href="About.html" class="hover:text-gray-400">about</a></li>
-              <li><a href="Services.html" class="hover:text-gray-400">services</a></li>
-              <li><a href="#Staffing" class="hover:text-gray-400">Staffing</a></li>
-              <li><a href="#Startup" class="hover:text-gray-400">Startup Services</a></li>
-              <li><a href="careers.html" class="hover:text-gray-400">career</a></li>
-              <li><a href="#contact" class="hover:text-gray-400">contact</a></li>
-              <li><a href="#faq" class="hover:text-gray-400">FAQ</a></li>
-            </ul>
-          </nav>
+    <header class="header   flex justify-between items-center px-4 shadow-md">
+        <a href="#">
+            <img class="w-20" src="./images/logo1.png" alt="Tech Mahindra">
+        </a>
         
-      
-        <!-- Mobile Menu -->
-        <nav id="mobile-menu" class="hidden lg:hidden bg-gray-800">
-          <ul class="flex flex-col space-y-2 p-4 pt-36">
-            <li><a href="Index.html" class="hover:text-gray-400">home</a></li>
-            <li><a href="About.html" class="hover:text-gray-400">about</a></li>
-            <li><a href="Services.html" class="hover:text-gray-400">services</a></li>
-            <li><a href="#Staffing" class="hover:text-gray-400">Staffing</a></li>
-            <li><a href="#Startup" class="hover:text-gray-400">Startup Services</a></li>
-            <li><a href="careers.html" class="hover:text-gray-400">career</a></li>
-            <li><a href="#contact" class="hover:text-gray-400">contact</a></li>
-            <li><a href="#faq" class="hover:text-gray-400">FAQ</a></li>
-          </ul>
+        <nav class="hidden lg:flex space-x-14 ">
+            <ul class="flex justify-center items-center space-x-14 ">
+                <li><a href="Index.html" class=" text-xl uppercase">About Us</a></li>
+                <li><a href="Capabilities.html" class=" text-xl uppercase">Capabilities</a></li>
+                <li><a href="Industries.html" class=" text-xl uppercase">Industries</a></li>
+                <li><a href="Insights.html" class=" text-xl uppercase">Insights</a></li>
+                <li><a href="Careers.html" class=" text-xl uppercase">Careers</a></li>
+                <li><a href="Contact.html" class=" text-xl uppercase">Contact Us</a></li>
+            </ul>
         </nav>
-      </header>
+    
+        <button class="lg:hidden" id="menu-toggle" aria-label="Toggle navigation menu">
+            <svg id="menu-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden bg-white shadow-md absolute top-16 right-0 w-full lg:hidden">
+            <ul class="flex flex-col space-y-2 p-4">
+                <li><a href="Index.html" class=" text-md uppercase">About Us</a></li>
+                <li><a href="Capabilities.html" class=" text-md uppercase">Capabilities</a></li>
+                <li><a href="Industries.html" class=" text-md uppercase">Industries</a></li>
+                <li><a href="Insights.html" class=" text-md uppercase">Insights</a></li>
+                <li><a href="Careers.html" class=" text-md uppercase">Careers</a></li>
+                <li><a href="Contact.html" class=" text-md uppercase">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
       
       
       <!-- Script placed just before the closing body tag -->
@@ -73,15 +61,20 @@
       
      
       
+      <section id="home" class="home">
+        <h1>Welcome to Sumeru Global</h1>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, aspernatur?</h2>
+        
+        <!-- Arrow Keys -->
+        <div class="arrow left-arrow" onclick="previousImage()">&#9664;</div>
+        <div class="arrow right-arrow" onclick="nextImage()">&#9654;</div>
+      
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+      </section>
 
-  <section id="home" class="home">
-    
-      <h1>Welcome to Sumeru Global</h1>
-      <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, aspernatur?</h2>
-    <div class="wave wave1"></div>
-    <div class="wave wave2"></div>
-    <div class="wave wave3"></div>
-  </section>
+
 
   <div class="intro">
     <p>Lorem ipsum dolor sit amet, consectetur <span>adipisicing elit</span>. Itaque dignissimos placeat error dolorum omnis similique dicta doloribus quas doloremque, quibusdam eos amet impedit, <span>mollitia accusamus?</span></p>
