@@ -19,9 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const images = [
-  "../images/img3.jpg",
-  "../images/img2.jpg",
-  "../images/img1.jpg",
+
+  "./images/img3.jpg",
+  "./images/img2.jpg",
+  "./images/img1.jpg",
   
 ];
 let currentIndex = 0;
@@ -40,7 +41,7 @@ function previousImage() {
   updateBackground();
 }
 
-// Automatically change background every 5 seconds
+
 setInterval(nextImage, 4000);
 
 
