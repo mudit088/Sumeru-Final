@@ -83,16 +83,21 @@
 // });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const menuIcon = document.getElementById('menu-icon');
-    const closeIcon = document.getElementById('close-icon');
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
 
-    if (menuToggle) {
-      menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        menuIcon.classList.toggle('hidden');
-        closeIcon.classList.toggle('hidden');
-      });
-    }
-  });
+  if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.classList.toggle('close-icon');
+      closeIcon.classList.toggle('close-icon');
+
+      // Debugging logs
+      console.log('Menu icon hidden:', menuIcon.classList.contains('hidden'));
+      console.log('Close icon hidden:', closeIcon.classList.contains('hidden'));
+    });
+  }
+});
+

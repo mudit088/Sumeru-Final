@@ -11,24 +11,56 @@
 </head>
 <body>
  
-    <header class="header">
-        <a href="#" class="logo"><img src="./images/logo1.png" alt=""></a>
+  <header class="header bg-gray-800 text-white p-4">
+    <div class="">
+        <a href="#">
+            <img class="w-20 sm:w-24 md:w-32 lg:w-40 xl:w-48" src="./images/logo1.png" alt="">
+        </a>
         
-       
-        <nav class="navbar">
-            <ul>
-                <li ><a href="index.html">home</a></li>
-                <li><a href="About.html">about</a></li>
-                <li><a href="Services.html">services</a></li>
-                <li><a href="#Staffing">Staffing</a></li>
-                <li><a href="#Startup ">Startup Services</a></li>
-                <li><a href="careers.html">career</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
-    </header>
-
+        </div>           
+        
+      <button class="block lg:hidden" id="menu-toggle" aria-label="Toggle navigation menu" title="Toggle navigation menu">
+        
+        <!-- Menu Icon (hamburger) -->
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+        
+        <!-- Close Icon (cross) -->
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+        
+      </button>
+      
+      <nav class="hidden sm:flex">
+        <ul class="flex space-x-4">
+          <li><a href="Index.html" class="hover:text-gray-400">home</a></li>
+          <li><a href="About.html" class="hover:text-gray-400">about</a></li>
+          <li><a href="Services.html" class="hover:text-gray-400">services</a></li>
+          <li><a href="#Staffing" class="hover:text-gray-400">Staffing</a></li>
+          <li><a href="#Startup" class="hover:text-gray-400">Startup Services</a></li>
+          <li><a href="careers.html" class="hover:text-gray-400">career</a></li>
+          <li><a href="#contact" class="hover:text-gray-400">contact</a></li>
+          <li><a href="#faq" class="hover:text-gray-400">FAQ</a></li>
+        </ul>
+      </nav>
+    
+  
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden lg:hidden bg-gray-800">
+      <ul class="flex flex-col space-y-2 p-4 pt-36">
+        <li><a href="Index.html" class="hover:text-gray-400">home</a></li>
+        <li><a href="About.html" class="hover:text-gray-400">about</a></li>
+        <li><a href="Services.html" class="hover:text-gray-400">services</a></li>
+        <li><a href="#Staffing" class="hover:text-gray-400">Staffing</a></li>
+        <li><a href="#Startup" class="hover:text-gray-400">Startup Services</a></li>
+        <li><a href="careers.html" class="hover:text-gray-400">career</a></li>
+        <li><a href="#contact" class="hover:text-gray-400">contact</a></li>
+        <li><a href="#faq" class="hover:text-gray-400">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
    <div class="h-full w-screen mt-36">
    
           

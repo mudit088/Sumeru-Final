@@ -47,6 +47,7 @@ body{
     border-left: .4rem solid #00bfff;
 }
 
+
 .heading::before, .clients .section-header h2::before, .section-head h1::before, .testimonials .section-header h2::before, .section-head-1 h4::before{
     top: 5.8rem;
     left: -2rem;
@@ -130,7 +131,7 @@ body{
 }
 
 /* Adjust for smaller mobile screens (max-width: 767px) */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .header {
         padding: 0.5rem 1rem;
         background-color: rgba(255, 255, 255, 0.9); /* More opaque background on small screens */
@@ -148,7 +149,7 @@ body{
     .navbar ul li {
         margin-bottom: 0.5rem; /* Add spacing between menu items */
     }
-}
+} */
 
 
 .header .logo img{
@@ -423,7 +424,7 @@ body{
 .pt-5 .container .row .section-head p{
     font-size: 2rem;
     color: #848383;
-    padding: 1rem 0;
+   
 }
   .section-head{
     margin-bottom: 60px;
