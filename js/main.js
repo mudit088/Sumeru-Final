@@ -124,4 +124,29 @@ function previousImage() {
   updateBackground();
 }
 
+// Automatically change background every 5 seconds
+setInterval(nextImage, 5000);
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const sr = ScrollReveal({
+    reset: false,
+    distance: '80px',
+    duration: 1500,
+    delay: 100
+  });
+
+  sr.reveal('.toporigin', { origin: 'top' });
+  sr.reveal('.bottomorigin', { origin: 'bottom' });
+  sr.reveal('.leftorigin', { origin: 'left' });
+  sr.reveal('.rightorigin', { origin: 'right' });
+});
+
+
+
+
+
+
 

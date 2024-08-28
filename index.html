@@ -9,6 +9,7 @@
     <link href="./src/output.css" rel="stylesheet">
    
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
    
 </head>
 <body>
@@ -55,15 +56,9 @@
       <!-- Script placed just before the closing body tag -->
      
       
-      
-    
-     
-      
-     
-      
-      <section id="home" class="home">
-        <h1>Welcome to Sumeru Global</h1>
-        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, aspernatur?</h2>
+    <section id="home" class="home">
+        <h1 class="">Welcome to Sumeru Global</h1>
+        <h2 class="animate-slidein1200">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, aspernatur?</h2>
         
         <!-- Arrow Keys -->
         <div class="arrow left-arrow" onclick="previousImage()">&#9664;</div>
@@ -76,15 +71,18 @@
 
 
 
-  <div class="intro">
-    <p>Lorem ipsum dolor sit amet, consectetur <span>adipisicing elit</span>. Itaque dignissimos placeat error dolorum omnis similique dicta doloribus quas doloremque, quibusdam eos amet impedit, <span>mollitia accusamus?</span></p>
+      <div class="intro flex-col sm:flex-row">
+        <div>
+            <img class="indeximg slideinFromLeft" src="./images/aboutus.png" alt="">
+        </div>
+        <p class="slideinFromRight">
+            Lorem ipsum dolor sit amet, consectetur <span>adipisicing elit</span>. Itaque dignissimos placeat error dolorum omnis similique dicta doloribus quas doloremque, quibusdam eos amet impedit, <span>mollitia accusamus?</span>
+        </p>
+    </div>
 
   </div>
 
   <div class="Offices flex flex-col sm:flex-row">
-    <div class="image-section">
-        <img src="./images/offices3.jpeg" alt="Woman with Document">
-    </div>
     <div class="text-section">
         <h1>Our offices</h1>
         <h2>Banglore</h2>
@@ -92,7 +90,49 @@
         <h2>Mumbai</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus sit, consequatur quaerat fugit illo labore temporibus quasi!</p>
     </div>
+    <div class="image-section">
+        <img src="./images/offices3.jpeg" alt="Woman with Document">
+    </div>
+    
 </div>
+
+
+<section class="form-section">
+    <div class="form-container">
+        <div class="form-left">
+            <h2 class="text-2xl">How did you hear about us?</h2>
+            <form>
+                <div class="form-group">
+                    <label for="first-name">First name*</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last name*</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button class="formbutton" type="submit">SUBMIT</button>
+            </form>
+        </div>
+        <div class="form-right">
+            <img src="./images/about4.jpg" alt="Form Image">
+        </div>
+    </div>
+</section>
+
+
+
 
 <div class="footer">
     <div class="footer-top">
