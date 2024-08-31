@@ -1690,28 +1690,35 @@ nav ul li a:focus,
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        padding-left: 1.5rem;
     }
 
     .footer .col-lg-3, 
     .footer .image12 {
         flex: 1; /* Ensure equal space is taken by all sections */
         min-width: 25%; /* Adjust based on your layout preference */
+        padding-left: 1.5rem;
     }
     
     .footer .image12 {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-left: 2rem;
     }
 }
 .footer .image12 img{
     height: 72px;
+}
+.footer .footer-links h4{
+    padding-left: 1.5rem;
 }
 
 .footer .footer-links ul a {
     font-size: 14px;
     color: #ffffff;
     text-decoration: none;
+    padding-left: 1.5rem;
 }
 
 .footer .footer-links ul a:hover {
@@ -1720,8 +1727,11 @@ nav ul li a:focus,
 
 .footer .footer-contact p {
     line-height: 26px;
+    padding-left: 2rem;
 }
-
+.footer .footer-contact h4{
+    padding-left: 1.5rem;
+}
 .footer .footer-newsletter input[type="email"] {
     padding: 6px 8px;
     width: 60%;
