@@ -13,7 +13,7 @@
    
 </head>
 <body>
-    <header class="header   flex justify-between items-center px-4 shadow-md">
+    <header class="header flex justify-between items-center px-4 shadow-md">
         <a href="#">
             <img class="w-20" src="./images/logo1.png" alt="">
         </a>
@@ -71,18 +71,19 @@
 
 
 
-      <div class="intro flex-col sm:flex-row">
+      <div class="intro flex flex-col sm:flex-row justify-center items-center">
         <div>
             <img class="indeximg slideinFromLeft" src="./images/aboutus.png" alt="">
         </div>
-        <p class="slideinFromRight">
+        <p class="slideinFromRight" style="font-size:2rem; ">
             Lorem ipsum dolor sit amet, consectetur <span>adipisicing elit</span>. Itaque dignissimos placeat error dolorum omnis similique dicta doloribus quas doloremque, quibusdam eos amet impedit, <span>mollitia accusamus?</span>
         </p>
     </div>
+    
 
   </div>
 
-  <div class="Offices flex flex-col sm:flex-row">
+  <div class="Offices flex flex-col sm:flex-row" >
     <div class="text-section">
         <h1>Our offices</h1>
         <h2>Banglore</h2>
@@ -103,13 +104,13 @@
             <h2 class="text-2xl">How did you hear about us?</h2>
             <form>
                 <div class="form-group">
-                    <label for="first-name">First name*</label>
+                    <label for="first-name">Full name*</label>
                     <input type="text" id="first-name" name="first-name" required>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="last-name">Last name*</label>
                     <input type="text" id="last-name" name="last-name" required>
-                </div>
+                </div> -->
                 <div class="form-group">
                     <label for="email">E-mail*</label>
                     <input type="email" id="email" name="email" required>
