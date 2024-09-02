@@ -50,7 +50,8 @@ body{
 .header a img {
    
     filter: drop-shadow(0 8px 16px rgba(63, 81, 181, 0.8));
-    width: 72px; /* Stronger shadow */
+    width: 6.2rem;
+     /* Stronger shadow */
 }
 
 .header a img:hover {
