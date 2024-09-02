@@ -49,7 +49,8 @@ body{
 /* Logo Styling */
 .header a img {
    
-    filter: drop-shadow(0 8px 16px rgba(63, 81, 181, 0.8)); /* Stronger shadow */
+    filter: drop-shadow(0 8px 16px rgba(63, 81, 181, 0.8));
+    width: 72px; /* Stronger shadow */
 }
 
 .header a img:hover {
@@ -197,6 +198,11 @@ nav ul li a:focus,
     border-left: .4rem solid #dee0e2;
     padding-bottom: 4rem;
 } */
+
+.logo1{
+    background-color: #f6f6f6;
+   
+}
 
 .faq .heading::before, .faq .heading::after{
     border-top: .4rem solid #00bfff;
